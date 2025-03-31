@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <!-- Desktop menu -->
+      <nav class="border-gray-200 dark:bg-gray-900">
+        <div class="desktop-nav flex flex-row justify-between bg-gray-500">
+          <!-- Logo -->
+          <div class="flex px-3">
+            <a href="/index.html" class="flex p-1 w-14">
+              <img src="logo.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Links -->
+          <ul
+            class="flex flex-row justify-center items-center p-2 max-[720px]:hidden bg-gray-500 font-medium text-white"
+          >
+            <li>
+              <a
+                class="block py-1 px-2 border hover:bg-gray-300 hover:text-black"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-1 px-2 border hover:bg-gray-300 hover:text-black"
+                href="about.html"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-1 px-2 border hover:bg-gray-300 hover:text-black"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+
+          <!-- Search and mobile button -->
+          <div class="flex flex-row">
+            <!-- Search -->
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Search"
+                class="h-8 w-40 p-2 border rounded-tl-lg rounded-bl-lg"
+              />
+              <button
+                type="submit"
+                class="bg-white h-8 px-2 border rounded-tr-lg rounded-br-lg hover:bg-gray-300"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex justify-end p-2">
+              <button id="menu-btn" class="hidden max-[720px]:block text-black">
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-nav">
+        <ul
+          id="mobile-menu"
+          class="flex flex-col justify-center hidden bg-gray-500 font-medium"
+        >
+          <li>
+            <a
+              class="block py-2 px-3 border border-white hover:bg-gray-300 hover:text-white"
+              href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 border border-white hover:bg-gray-300 hover:text-white"
+              href="about.html"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 px-3 border border-white hover:bg-gray-300 hover:text-white"
+              href="contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Contact form -->
+    <section>
+      <div class="flex flex-col sm:flex-row border-x border-gray-500">
+        <div class="sm:w-full flex items-center justify-center text-center">
+          <span class="mt-3 border p-3"
+            >If you have any questions, dont waste your time, just ask!</span
+          >
+        </div>
+
+        <div class="p-10 sm:w-full">
+          <div class="border rounded-xl p-4 bg-gray-200">
+            <form action="" class="flex flex-col">
+              <span class="text-center font-semibold">Contact us</span>
+
+              <label for="">Full name:</label>
+              <input
+                type="text"
+                class="rounded-md p-1 mb-2"
+                placeholder="Your name..."
+              />
+
+              <label for="">Phone:</label>
+              <input
+                type="text"
+                class="rounded-md p-1 mb-2"
+                placeholder="Your phone number..."
+              />
+
+              <label for="">Email:</label>
+              <input
+                type="text"
+                class="rounded-md p-1 mb-2"
+                placeholder="Your email..."
+              />
+
+              <label for="">Subject</label>
+              <textarea
+                name=""
+                id=""
+                class="rounded-md p-1 mb-2"
+                placeholder="Ask your question..."
+              ></textarea>
+
+              <input
+                type="submit"
+                value="Submit"
+                class="border mt-2 border-gray-500 rounded-md w-24 center bg-gray-500 hover:bg-gray-200 cursor-pointer font-medium"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts and location section -->
+    <section>
+      <div
+        class="flex flex-col border border-gray-500 sm:flex-row items-center sm:items-center"
+      >
+        <!-- Contacts -->
+        <div class="w-1/2 flex items-center">
+          <div class="flex flex-col p-4">
+            <span class="font-medium text-xl">Contacts:</span>
+            <span class=""><a href="tel:+58845">Phone: 58845</a></span>
+            <span class=""><a href="tel:+25665">Phone: 25665</a></span>
+            <span class="hover:text-gray-400"
+              ><a href="mailto:info@gmail.com">Email: info@gmail.com</a></span
+            >
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="w-1/2 flex flex-col items-center p-4">
+          <div>
+            <span class="font-medium text-xl">Our location</span>
+          </div>
+          <div class="">
+            <iframe
+              class="sm:w-64"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer class="flex flex-row justify-around items-center bg-gray-400 p-3 border-x border-gray-500">
+      <!-- Nav links -->
+      <div class="font-semibold">
+        <ul>
+          <li>
+            <a href="/index.html" class="hover:text-white hover:underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="hover:text-white hover:underline"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="hover:text-white hover:underline"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Logo -->
+      <div class="m-3">
+        <a href="/index.html" class="flex w-32">
+          <img src="logo.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Rights -->
+    <div class="bg-gray-500 p-2 text-center border border-black">
+      <p>All rights reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
