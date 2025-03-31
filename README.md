@@ -1,2 +1,2 @@
 # website-template
-Website Template
+Website template using HTML,CSS,Tailwind CSS, JS
